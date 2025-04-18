@@ -6,8 +6,6 @@
 
 本指南旨在说明如何在你的本地计算机上安装、配置并运行“LLM 数据集生成器”应用程序。该应用允许你上传文档、解析内容、分割文本，并利用多种大型语言模型（LLM），如 Google Gemini、Ollama（本地模型）、DeepSeek（深度求索）、SiliconFlow（硅基流动）等，来生成问答对（QA）、思维链（CoT）和领域标签（Domain Tag）。生成的数据将存储在本地的 SQLite 数据库中。
 
-建议使用gemini相关模型，不建议使用推理性模型，如果使用推理性模型，建议使用gemini2.5pro,其他当前项目只实现了gemini相关模型和ollama相关模型。
-
 本指南假定你对使用命令行或终端有基本的了解。
 
 ## 系统要求与准备
@@ -25,7 +23,7 @@
 5.  **(非 Windows 系统) `libmagic`:** `python-magic` 库（用于识别文件 MIME 类型）在 Linux 和 macOS 上需要系统级的 `libmagic` 库支持。
     *   **Debian/Ubuntu:** `sudo apt-get update && sudo apt-get install -y libmagic1`
     *   **macOS (使用 Homebrew):** `brew install libmagic`
-
+（此版本推荐使用Gemini相关模型）
 ## 安装步骤
 
 请按照以下步骤安装应用程序：
